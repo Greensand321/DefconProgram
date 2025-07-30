@@ -41,4 +41,19 @@ The repository includes a separate `password` program that controls a redstone d
 ## Logs
 Logs are written to `data/logs/launch_log.txt` whenever significant events occur (if the directory exists). You can view these logs from within the command center by choosing the appropriate menu option in some versions of the program.
 
+## DEFCON Level Demo
+`services/defcon_control.lua` presents a simple interface for experimenting with
+different DEFCON levels. The program automatically searches for an attached
+monitor and displays buttons labeled **1** through **5**. Selecting a button
+lowers or raises the current level—descending requires going one step at a time
+while ascending can skip levels. Each level changes the monitor's color and
+selecting level **1** causes the screen to blink briefly before remaining red
+until another level is chosen.
+
+Run it with:
+
+```
+services/defcon_control.lua
+```
+
 For additional technical details see `docs/README.md`.
